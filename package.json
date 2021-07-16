@@ -1,0 +1,26 @@
+{
+  "name": "crodrigues.dev",
+  "version": "1.0.0",
+  "description": "Personal blog built with 11ty",
+  "scripts": {
+    "clean": "rimraf public",
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [
+    "blog",
+    "11ty"
+  ],
+  "author": "Carlos Rodrigues",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
+    "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
+    "eleventy-critical-css": "^1.0.0",
+    "eleventy-google-fonts": "0.0.5",
+    "eleventy-plugin-automatic-noopener": "^2.0.1",
+    "eleventy-plugin-tailwindcss": "^0.3.0"
+  },
+  "dependencies": {}
+}

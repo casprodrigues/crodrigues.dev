@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+---
+
+<header class="flex justify-between">
+	<a href="/">
+		<h1 class="text-primary text-opacity-75 font-bold">crodrigues.dev</h1>
+	</a>
+	{% include 'components/main-navbar.njk' %}
+</header>
+<main class="flex-1 my-4">
+	{{ content | safe }}
+</main>
+<footer class="flex flex-col items-center">
+	{% include 'components/social-navbar.njk' %}
+	<small class="text-fg text-opacity-50 mt-4">Esta obra está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Atribuição 4.0 Internacional</a>.</small>
+</footer>

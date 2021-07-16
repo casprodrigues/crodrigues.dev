@@ -1,0 +1,13 @@
+{% import 'icons/feather.njk' as feather %}
+
+<nav>
+	<a href="https://github.com/{{ social.github }}" rel="noopener">
+		{{ feather.feather('github') }}
+	</a>
+	<a href="https://linkedin.com/in/{{ social.linkedin }}" rel="noopener">
+		{{ feather.feather('linkedin') }}
+	</a>
+	<a href="mailto:{{ social.mail }}" rel="noopener">
+		{{ feather.feather('mail') }}
+	</a>
+</nav>

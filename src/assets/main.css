@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+	body {
+		@apply bg-bg text-fg min-h-screen flex flex-col;
+	}
+
+	header, main, footer {
+		@apply w-full max-w-3xl mx-auto p-4;
+	}
+
+	nav {
+		@apply flex;
+	}
+
+	nav + nav {
+		@apply mt-6;
+	}
+
+	nav a {
+		@apply text-fg text-opacity-50;
+	}
+
+	nav a:hover {
+		@apply text-opacity-100;
+	}
+
+	nav a + a {
+		@apply ml-4;
+	}
+	
+	nav svg {
+		@apply stroke-current stroke-2 w-8 h-8;
+	}
+
+	.skills {
+
+	}
+
+	.skill {
+		@apply flex items-center;
+	}
+
+	.skill svg {
+		@apply w-10 h-10 stroke-current fill-current opacity-25;
+	}
+
+	.skill span {
+		@apply ml-2 text-lg;
+	}
+
+}
