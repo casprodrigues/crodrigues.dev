@@ -16,6 +16,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
+    "@quasibit/eleventy-plugin-sitemap": "^2.1.4",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
     "eleventy-critical-css": "^1.0.0",
     "eleventy-google-fonts": "0.0.5",
