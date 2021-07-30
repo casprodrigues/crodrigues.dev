@@ -43,6 +43,7 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY package.json /app
 RUN npm install
+RUN npm install --only=dev
 COPY . /app
 RUN npm run build
 
