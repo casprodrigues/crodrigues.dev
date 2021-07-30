@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title }}</title>
+	<title>{{ title + " - Carlos Rodrigues" if title else "Carlos Rodrigues" }}</title>
 	<link rel="stylesheet" href="/assets/main.css">
 	<link rel="stylesheet" href="/assets/prism-gruvbox-dark.css">
 	{% eleventyGoogleFonts 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap' %}
@@ -12,6 +12,10 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
 	<link rel="manifest" href="/static/site.webmanifest">
+
+	{% if analytics.plausible.base_url %}
+		<script async defer data-domain="{{ analytics.plausible.data_domain }}" src="{{ analytics.plausible.base_url }}js/plausible.js"></script>
+	{% endif %}
 </head>
 <body>
 	{{ content | safe }}

@@ -12,6 +12,14 @@
 		@apply w-full max-w-3xl mx-auto p-4;
 	}
 
+	.main a {
+		@apply border-b border-fg border-opacity-25;
+	}
+
+	.main a:hover {
+		@apply border-opacity-50;
+	}
+
 	nav {
 		@apply flex;
 	}
@@ -36,20 +44,25 @@
 		@apply stroke-current stroke-2 w-8 h-8;
 	}
 
-	.skills {
+	.about-card + .about-card {
+		@apply mt-4;
+	}
 
+	.skills {
+		@apply grid gap-4;
+		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 	}
 
 	.skill {
-		@apply flex items-center;
+		@apply flex flex-col items-center m-2;
 	}
 
 	.skill svg {
-		@apply w-10 h-10 stroke-current fill-current opacity-25;
+		@apply w-14 h-14 stroke-current fill-current opacity-20;
 	}
 
 	.skill span {
-		@apply ml-2 text-lg;
+		@apply text-lg;
 	}
 
 }
