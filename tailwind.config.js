@@ -13,9 +13,9 @@ module.exports = {
 		},
 		colors: {
 			transparent: 'transparent',
-			bg: '#3c3836',
-			primary: '#fe8019',
-			fg: '#ebdbb2',
+			bg: '#282828',
+			fg: '#FBF1C7',
+			primary: '#FE8019',
 		},
 		extend: {},
 	},

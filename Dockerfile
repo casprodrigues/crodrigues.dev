@@ -38,6 +38,7 @@ RUN apt update && apt install -y \
 	lsb-release \
 	xdg-utils \
 	wget
+ENV NODE_ENV=production
 RUN mkdir -p /app
 WORKDIR /app
 COPY package.json /app
