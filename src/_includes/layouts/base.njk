@@ -23,9 +23,9 @@
 
 	{% if analytics.shynet.base_url %}
 		<noscript>
-			<img src="https://{{ analytics.shynet.base_url }}/ingress/{{ analytics.shynet.id }}/pixel.gif">
+			<img src="{{ analytics.shynet.base_url }}ingress/{{ analytics.shynet.id }}/pixel.gif">
 		</noscript>
-		<script defer src="https://{{ analytics.shynet.base_url }}/ingress/{{ analytics.shynet.id }}/script.js"></script>
+		<script defer src="{{ analytics.shynet.base_url }}ingress/{{ analytics.shynet.id }}/script.js"></script>
 	{% endif %}
 </body>
 </html>
