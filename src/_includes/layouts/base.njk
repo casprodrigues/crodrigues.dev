@@ -16,8 +16,16 @@
 	{% if analytics.plausible.base_url %}
 		<script async defer data-domain="{{ analytics.plausible.data_domain }}" src="{{ analytics.plausible.base_url }}js/plausible.js"></script>
 	{% endif %}
+
 </head>
 <body>
 	{{ content | safe }}
+
+	{% if analytics.shynet.base_url %}
+		<noscript>
+			<img src="https://{{ analytics.shynet.base_url }}/ingress/{{ analytics.shynet.id }}/pixel.gif">
+		</noscript>
+		<script defer src="https://{{ analytics.shynet.base_url }}/ingress/{{ analytics.shynet.id }}/script.js"></script>
+	{% endif %}
 </body>
 </html>

@@ -1,6 +1,10 @@
 {
 	"plausible": {
-		"data_domain": "crodrigues.dev",
+		"data_domain": "",
+		"base_url": ""
+	},
+	"shynet": {
+		"id": "6654502a-d17e-4ca4-9f27-ec88253d03e0",
 		"base_url": "https://stats.crodrigues.dev/"
 	}
 }
