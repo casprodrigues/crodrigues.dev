@@ -1,0 +1,129 @@
+{
+	"work_experience": [
+		{
+			"title": "Analista de Desenvolvimento",
+			"employment_type": "Tempo integral",
+			"company": {
+				"name": "Finaxis Brasil",
+				"website": "https://finaxis.com.br/"
+			},
+			"location": "Remoto",
+			"start_date": "abr. de 2021",
+			"end_date": null
+		},
+		{
+			"title": "Analista de Desenvolvimento",
+			"employment_type": "Tempo integral",
+			"company": {
+				"name": "Stefanini Brasil",
+				"website": "https://stefanini.com/pt-br"
+			},
+			"location": "Remoto",
+			"start_date": "set. de 2020",
+			"end_date": "mar. de 2021"
+		},
+		{
+			"title": "Desenvolvedor de Sistemas",
+			"employment_type": "Tempo integral",
+			"company": {
+				"name": "CRP Tecnologia",
+				"website": "https://www.crptecnologia.com.br/"
+			},
+			"location": "Palmas - TO",
+			"start_date": "out. de 2019",
+			"end_date": "ago. de 2020"
+		},
+		{
+			"title": "Desenvolvedor de Sistemas Web",
+			"employment_type": "Tempo integral",
+			"company": {
+				"name": "SIFCON Sistemas",
+				"website": "https://sifcon.com.br/"
+			},
+			"location": "Palmas - TO",
+			"start_date": "nov. de 2017",
+			"end_date": "out. de 2019"
+		},
+		{
+			"title": "Analista de Suporte",
+			"employment_type": "Tempo integral",
+			"company": {
+				"name": "CRP Tecnologia",
+				"website": "https://www.crptecnologia.com.br/"
+			},
+			"location": "Palmas - TO",
+			"start_date": "set. de 2014",
+			"end_date": "fev. de 2015"
+		}
+	],
+	"education": [
+		{
+			"degree": "Mestre",
+			"field_of_study": "Engenharia Elétrica e de Computação",
+			"school": "Universidade Federal de Goiás",
+			"completed": true,
+			"start_year": 2015,
+			"end_year": 2018,
+			"activities": "Machine Learning, Visão Computacional"
+		},
+		{
+			"degree": "Bacharel",
+			"field_of_study": "Ciência da Computação",
+			"school": "Universidade Federal do Tocantins",
+			"completed": true,
+			"start_year": 2009,
+			"end_year": 2013,
+			"activities": "Redes Neurais, Robótica"
+		}
+	],
+	"certifications": [
+		{
+			"name": "Oracle Certified Professional: Java SE 11 Developer",
+			"issuing_org": "Oracle",
+			"issue_date": "abr 2021",
+			"credential_id": "273276053OCPJSE11-J",
+			"url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=5B8743962D854FCF1BBDF71C0B65BE54EB87527244307B70D3A5B76A0122C80C"
+		},
+		{
+			"name": "Certified Tester Foundation Level",
+			"issuing_org": "BSTQB",
+			"issue_date": "dez 2011",
+			"credential_id": "11-CTFL-01670-BR",
+			"url": "https://bstqb.org.br/b9/verificador-certificado?field_certificado_numero_value=11-CTFL-01670-BR"
+		}
+	],
+	"skills": [
+		{
+			"name": "Java",
+			"icon": "java"
+		},
+		{
+			"name": "Spring",
+			"icon": "spring"
+		},
+		{
+			"name": "Angular",
+			"icon": "angularjs"
+		},
+		{
+			"name": "Git",
+			"icon": "git"
+		},
+		{
+			"name": "HTML5",
+			"icon": "html5"
+		},
+		{
+			"name": "CSS3",
+			"icon": "css3"
+		},
+		{
+			"name": "Docker",
+			"icon": "docker"
+		},
+		{
+			"name": "Linux",
+			"icon": "linux"
+		}
+	]
+}

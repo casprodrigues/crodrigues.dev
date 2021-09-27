@@ -20,6 +20,10 @@
 		@apply border-opacity-50;
 	}
 
+	.main p {
+		@apply text-lg mb-4 leading-relaxed;
+	}
+
 	nav {
 		@apply flex;
 	}
@@ -42,6 +46,17 @@
 	
 	nav svg {
 		@apply stroke-current stroke-2 w-8 h-8;
+	}
+
+	.primary-card {
+		@apply relative py-2 pl-8 border-l-2 border-primary border-opacity-50;
+	}
+
+	.primary-card::before {
+		@apply absolute opacity-50 top-4 left-0;
+		content: '';
+		border-width: 8px 0 8px 12px;
+		border-color: transparent transparent transparent #FE8019; /* TODO: remover cor hardcoded */
 	}
 
 	.about-card + .about-card {

@@ -1,20 +1,64 @@
 ---
 layout: layouts/page.njk
+
+title: Sobre mim
 ---
 
 {% import 'icons/devicons.njk' as devicons %}
 
-<h1>Sobre mim</h1>
+<h1 class="text-primary text-4xl mb-4">Sobre mim</h1>
 
-TODO
+<p>
+	Olá, meu nome é Carlos, e sou Desenvolvedor de Sistemas. Trabalho principalmente como desenvolvedor backend
+	utilizando Java e Spring, e também possuo conhecimento em Angular. Gosto de construir sistemas web escaláveis
+	e com foco em código limpo.
+</p>
 
-<div class="skill">
-	{{ devicons.plain('java') }}
-	<span>Java</span>
+<!--a href="">Currículo em PDF</a-->
+
+<h2 class="text-primary text-2xl mt-8 mb-4">Experiência profissional</h2>
+{% for experience in cv.work_experience %}
+	<div class="primary-card">
+		<h3 class="text-lg">{{ experience.title }}</h3>
+		<span class="text-fg text-opacity-50 block">
+			<a href="{{ experience.company.website }}" rel="nofollow" target="_blank">{{ experience.company.name }}</a> - {{ experience.employment_type }}
+		</span>
+		{% if experience.end_date %}
+			<span class="text-fg text-opacity-50 block">De {{ experience.start_date }} a {{ experience.end_date }}</span>
+		{% else %}
+			<span class="text-fg text-opacity-50 block">Desde {{ experience.start_date }}</span>
+		{% endif %}
+	</div>
+{% endfor %}
+
+<h2 class="text-primary text-2xl mt-8 mb-4">Formação acadêmica</h2>
+{% for education in cv.education %}
+	<div class="about-card">
+		<h3 class="text-lg">{{ education.degree }} em {{ education.field_of_study }}</h3>
+		<span class="text-fg text-opacity-50 block">{{ education.school }}, {{ education.end_year }}</span>
+		<span class="text-fg text-opacity-50 block">Áreas de estudo: {{ education.activities }}</span>
+	</div>
+{% endfor %}
+
+<h2 class="text-primary text-2xl mt-8 mb-4">Certificações</h2>
+{% for certification in cv.certifications %}
+	<div class="about-card">
+		<h3 class="text-lg">
+			<a href="{{ certification.url }}" rel="nofollow">
+				{{ certification.name }}
+			</a>
+		</h3>
+		<span class="text-fg text-opacity-50 block">Emitido por {{ certification.issuing_org }} em {{ certification.issue_date }}</span>
+		<span class="text-fg text-opacity-50 block">Credencial nº {{ certification.credential_id }}</span>
+	</div>
+{% endfor %}
+
+<h2 class="text-primary text-2xl mt-8 mb-4">Principais competências</h2>
+<div class="skills">
+	{% for skill in cv.skills %}
+		<div class="skill">
+			{{ devicons.plain(skill.icon) }}
+			<span>{{ skill.name }}</span>
+		</div>
+	{% endfor %}
 </div>
-
-<h2>Certificações</h2>
-
-<h2>Experiência profissional</h2>
-
-<h2>Formação acadêmica</h2>

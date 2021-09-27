@@ -21,7 +21,8 @@
     "eleventy-critical-css": "^1.0.0",
     "eleventy-google-fonts": "0.0.5",
     "eleventy-plugin-automatic-noopener": "^2.0.1",
-    "eleventy-plugin-tailwindcss": "^0.3.0"
+    "eleventy-plugin-tailwindcss": "^0.3.0",
+    "lodash": "^4.17.21"
   },
   "dependencies": {}
 }

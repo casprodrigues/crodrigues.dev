@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const tailwindcss = require('eleventy-plugin-tailwindcss');
 const googleFonts = require('eleventy-google-fonts');
 const criticalCss = require('eleventy-critical-css');
@@ -21,6 +22,13 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addPassthroughCopy('src/static');
+
+	eleventyConfig.addCollection('snippetsByLang', function(collectionApi) {
+		return _.chain(collectionApi.getFilteredByTag('snippet'))
+			.sortBy(snippet => snippet.data.title)
+			.groupBy(snippet => snippet.data.lang)
+			.value();
+	});
 
 	return {
 		dir: {

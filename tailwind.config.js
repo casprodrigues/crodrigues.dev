@@ -1,6 +1,5 @@
 module.exports = {
 	purge: {
-		// enabled: true,
 		content: [
 			'./src/**/*.html',
 			'./src/**/*.md',
@@ -14,7 +13,7 @@ module.exports = {
 		colors: {
 			transparent: 'transparent',
 			bg: '#282828',
-			fg: '#FBF1C7',
+			fg: '#EBDBB2',
 			primary: '#FE8019',
 		},
 		extend: {},
