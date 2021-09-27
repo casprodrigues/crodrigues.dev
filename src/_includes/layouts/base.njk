@@ -13,7 +13,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
 	<link rel="manifest" href="/static/site.webmanifest">
 
-	{% if analytics.plausible.base_url %}
+	{% if analytics.plausible.base_url and env.env === 'production' %}
 		<script async defer data-domain="{{ analytics.plausible.data_domain }}" src="{{ analytics.plausible.base_url }}js/plausible.js"></script>
 	{% endif %}
 
@@ -21,7 +21,7 @@
 <body>
 	{{ content | safe }}
 
-	{% if analytics.shynet.base_url %}
+	{% if analytics.shynet.base_url and env.env === 'production' %}
 		<noscript>
 			<img src="{{ analytics.shynet.base_url }}ingress/{{ analytics.shynet.id }}/pixel.gif">
 		</noscript>
